@@ -1,1 +1,1 @@
-# [meganbrown.codes](https://www.meganbrown.codes)
+# [meganbrown.codes](http://meganbrown.codes/)
