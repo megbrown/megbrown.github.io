@@ -95,19 +95,36 @@ a.portfolio-button:hover {
   color: #fff;
 }
 .card {
-  margin-bottom: 20%;
-  border: 2px solid #000;
+  margin-bottom: 15%;
+  border: 2px solid #f7f7f7;
+}
+/***** misc *****/
+.misc {
+  height: 400px;
+  background-color: #819ed6;
+}
+/***** technologies *****/
+.tech-logo-cont {
+  margin-bottom: 4%;
+}
+.tech-logo {
+  width: 50%;
+  height: auto;
+  margin-bottom: 10%;
 }
 
-/***** technologies *****/
+.sub-tech {
+  margin-bottom: 4%;
+}
 /***** contact *****/
 div#contact {
-  background-image: url('../images/contact-background.jpg');
+  background-image: url('../images/contact-background-01.jpeg');
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
 div#contact-info {
-  padding-top: 3%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 #contact h2 {
   font-size: 2vw;
