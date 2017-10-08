@@ -23,6 +23,7 @@
 			<div class="navbar-nav">
 				<a class="nav-item nav-link" href="#portfolio">portfolio</a>
 				<a class="nav-item nav-link" href="#technologies">technologies</a>
+				<a class="nav-item nav-link" href="#about">about</a>
 				<a class="nav-item nav-link" href="#contact">contact</a>
 			</div>
 		</div>
@@ -40,7 +41,7 @@
 				</p>
 				<ul class="text-center">
 					<li><a href="https://github.com/megbrown" target="_blank"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a></li>
-					<li><a href="https://www.linkedin.com/in/megan-brown-602870135/" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
+					<li><a href="https://www.linkedin.com/in/megan-j-brown/" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
 					<li><a href="https://twitter.com/meganbrowncodes" target="_blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a></li>
 					<li><a href="https://www.facebook.com/profile.php?id=100013415103228" target="_blank"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a></li>
 				</ul>
@@ -58,10 +59,9 @@
 						<img class="card-img-top" src="./images/front-end-image-cap.png" alt="This is Historic NashGuessr." height="180">
 						<div class="card-block">
 							<h4 class="card-title">Historic NashGuessr</h4>
-							<p class="card-text">Play a game using National Register of Historic Places data and test your knowledge of Nashville architecture and
-								development.
-							</p>
-							<a href="#" class="portfolio-button">DETAILS</a>
+							<p class="card-text">Play a game using National Register of Historic Places data and test your knowledge of Nashville architecture and development.</p>
+							<a class="link" href="https://github.com/megbrown/Historic-NashGuessr" target="_blank"><img class="github-logo" src="./images/github.png" width="15" height="auto"/>github.com/megbrown/Historic-NashGuessr</a>
+							<a href="#" class="portfolio-button" data-toggle="modal" data-target="#Historic-NashGuessr">DETAILS</a>
 						</div>
 					</div>
 				</div>
@@ -79,10 +79,69 @@
 		</div>
 	</div>
 	<!-- end portfolio -->
-	<!-- misc.? -->
-	<div class="misc">
+	<!-- Historic NashGuessr Modal -->
+	<div class="modal fade" id="Historic-NashGuessr" tabindex="-1" role="dialog" aria-labelledby="Historic-NashGuessr" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="Historic-NashGuessr">Historic NashGuessr</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <h4>Summary</h4>
+	        <p>The user plays a game using National Register of Historic Places data. An image of a historic place  is supplied and the user must guess the location of the building in Nashville on a map. With this web application, the user can save place data, view scores and add notes.</p>
+	        <a class="link" href="https://github.com/megbrown/Historic-NashGuessr" target="_blank"><img class="github-logo" src="./images/github.png" width="15" height="auto"/>github.com/megbrown/Historic-NashGuessr</a>
+	        <h4>Technologies</h4>
+	        <ul>
+	        	<li><a href="https://angularjs.org/" target="_blank">AngularJS</a></li>
+	        	<li><a href="https://ngmap.github.io/" target="_blank">ng-map</a></li>
+	        	<li><a href="https://developers.google.com/maps/documentation/javascript/" target="_blank">Google Maps API</a></li>
+	        	<li><a href="https://firebase.google.com/" target="_blank">Firebase</a></li>
+	        	<li><a href="https://v4-alpha.getbootstrap.com/" target="_blank">Bootstrap</a></li>
+	        </ul>
+	        <h4>The Web Application</h4>
+	        <div class="modal-image">
+	        	<img src="./images/front-end-image-cap.png" width="400" height="auto"/>
+	        </div>
+	        <div class="modal-image">
+	        	<img src="./images/historic-nashguessr-thumbnails/01-info.png" width="400" height="auto"/>
+	        </div>
+	        <div class="modal-image">
+	        	<img src="./images/historic-nashguessr-thumbnails/02-home.png" width="400" height="auto"/>
+	        </div>
+	        <div class="modal-image">
+	        	<img src="./images/historic-nashguessr-thumbnails/03-photo.png" width="400" height="auto"/>
+	        </div>
+	        <div class="modal-image">
+	        	<img src="./images/historic-nashguessr-thumbnails/04-map.png" width="400" height="auto"/>
+	        </div>
+	        <div class="modal-image">
+	        	<img src="./images/historic-nashguessr-thumbnails/05-results.png" width="400" height="auto"/>
+	        </div>
+	        <div class="modal-image">
+	        	<img src="./images/historic-nashguessr-thumbnails/06-details.png" width="400" height="auto"/>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- end historic nash modal -->
+	<!-- about -->
+	<div id="about">
 		<div class="container">
-			<h2 class="section-title">IDK</h2>
+			<h2 class="section-title"></h2>
+			<div class="row">
+				<div class="col-sm-2 offset-sm-2">
+					<img class="about-me" src="./images/me.png"/>
+				</div>
+				<div class="col-sm-6">
+					<h3>Hello!</h3>
+					<p>I recently relocated to Nashville to begin my journey into software development at <a href="http://nashvillesoftwareschool.com/" target="_blank">Nashville Software School</a>. I want to combine the skills I have learned from my background in Historic Preservation and Urban Planning with the software development skills I am learning now to build and contribute to projects that will make a positive impact on my new community. I'm excited to learn more and get involved!</p>
+					<a class="link" href="https://github.com/megbrown/Historic-NashGuessr" target="_blank"><img class="github-logo" src="./images/github.png" width="15" height="auto"/>github.com/megbrown</a>
+				</div>
+			</div>
 		</div>
 	</div>
 	<!-- end misc. -->

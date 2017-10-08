@@ -24,7 +24,7 @@ a:hover {
   text-decoration: underline;
 }
 h2.section-title {
-  margin: 4% 0 2% 0;
+  padding: 4% 0 2% 0;
 }
 
 /***** nav *****/
@@ -32,7 +32,8 @@ nav {
   background: #fff !important;
 }
 a.navbar-brand {
-  margin-right: 50%;
+  margin-right: 40%;
+  margin-left: 5%;
 }
 a.nav-item {
   margin-right: 15%;
@@ -118,10 +119,34 @@ a.portfolio-button:hover {
   margin-bottom: 15%;
   border: 2px solid #f7f7f7;
 }
-/***** misc *****/
-.misc {
-  height: 400px;
-  background-color: #819ed6;
+p.card-text {
+  margin-bottom: 15px;
+}
+.link {
+  font-size: .75em;
+  color: #000;
+  display: block;
+  margin-bottom: 15px;
+}
+.link:hover {
+  color: #cbcbcb;
+  text-decoration: none;
+}
+img.github-logo {
+  margin-right: 5px;
+}
+div.modal-image {
+  display: block;
+  margin-bottom: 20px;
+}
+/***** about *****/
+#about {
+  background-color: #c9d7e0;
+}
+img.about-me {
+  width: 110%;
+  height: auto;
+  margin-bottom: 40%;
 }
 /***** technologies *****/
 .tech-logo-cont {
@@ -132,7 +157,6 @@ a.portfolio-button:hover {
   height: auto;
   margin-bottom: 10%;
 }
-
 .sub-tech {
   margin-bottom: 4%;
 }
