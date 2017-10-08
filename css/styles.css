@@ -8,7 +8,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+a {
   font-family: 'Lato', sans-serif;
 }
 p,
@@ -24,6 +25,17 @@ a:hover {
 }
 h2.section-title {
   margin: 4% 0 2% 0;
+}
+
+/***** nav *****/
+nav {
+  background: #fff !important;
+}
+a.navbar-brand {
+  margin-right: 50%;
+}
+a.nav-item {
+  margin-right: 15%;
 }
 
 /***** bio *****/
