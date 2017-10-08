@@ -53,12 +53,20 @@ h1 {
   font-size: 5vw;
   margin: 0;
 }
+.subtitle {
+  font-weight: 100;
+  color: #fff;
+}
 #bio-info h3 {
-  margin: 1em 0 3em 0;
+  margin: 1.5em 0 2em 0;
   color: #f7f7f7;
   font-size: 2vw;
   letter-spacing: 1px;
   line-height: 1.5em;
+}
+.summary {
+  width: 75%;
+  margin: auto;
 }
 #bio-info a.button {
   display: inline-block;
