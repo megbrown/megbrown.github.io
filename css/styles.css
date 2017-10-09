@@ -136,8 +136,9 @@ img.github-logo {
   margin-right: 5px;
 }
 div.modal-image {
+  width: 380px;
+  margin-bottom: 0 auto 20px auto;
   display: block;
-  margin-bottom: 20px;
 }
 /***** about *****/
 #about {
@@ -185,6 +186,9 @@ div#contact-info {
 }
 #contact i {
   font-size: 1.5em;
+}
+.contact {
+  font-weight: 700;
 }
 
 /***** footer *****/

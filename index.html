@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +10,6 @@
 	<script src="https://use.fontawesome.com/e97cbb71fe.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
-
 <body>
 	<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
 		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
@@ -90,6 +88,10 @@
 	        </button>
 	      </div>
 	      <div class="modal-body">
+	      	<h4>Goals</h4>
+	      		<p>Utilize the National Register of Historic Places dataset from the National Park Service.</p>
+						<p>Give the user a fun way to interact with listed places in Nashville</p>
+						<p>Provide an opportunity for the user to learn more about those places</p>
 	        <h4>Summary</h4>
 	        <p>The user plays a game using National Register of Historic Places data. An image of a historic place  is supplied and the user must guess the location of the building in Nashville on a map. With this web application, the user can save place data, view scores and add notes.</p>
 	        <a class="link" href="https://github.com/megbrown/Historic-NashGuessr" target="_blank"><img class="github-logo" src="./images/github.png" width="15" height="auto"/>github.com/megbrown/Historic-NashGuessr</a>
@@ -103,25 +105,32 @@
 	        </ul>
 	        <h4>The Web Application</h4>
 	        <div class="modal-image">
-	        	<img src="./images/front-end-image-cap.png" width="400" height="auto"/>
+	        	<img src="./images/front-end-image-cap.png" width="380" height="auto"/>
+	        	<p>The user logs in and is authenticated with google.</p>
 	        </div>
 	        <div class="modal-image">
-	        	<img src="./images/historic-nashguessr-thumbnails/01-info.png" width="400" height="auto"/>
+	        	<img src="./images/historic-nashguessr-thumbnails/01-info.png" width="380" height="auto"/>
+	        	<p>An information modal provides background and directions for using the app.
 	        </div>
 	        <div class="modal-image">
-	        	<img src="./images/historic-nashguessr-thumbnails/02-home.png" width="400" height="auto"/>
+	        	<img src="./images/historic-nashguessr-thumbnails/02-home.png" width="380" height="auto"/>
+	        	<p>Each user has a home page with saved places and scores. This is where they can access a new game.
 	        </div>
 	        <div class="modal-image">
-	        	<img src="./images/historic-nashguessr-thumbnails/03-photo.png" width="400" height="auto"/>
+	        	<img src="./images/historic-nashguessr-thumbnails/03-photo.png" width="380" height="auto"/>
+	        	<p>After the user clicks 'play game', they are presented with a random image from a collection of historic place images from the National Register of Historic Places place data.
 	        </div>
 	        <div class="modal-image">
-	        	<img src="./images/historic-nashguessr-thumbnails/04-map.png" width="400" height="auto"/>
+	        	<img src="./images/historic-nashguessr-thumbnails/04-map.png" width="380" height="auto"/>
+	        	<p>Next, the user is given a map to place a pin where they think the historic place in the previous image is.</p>
 	        </div>
 	        <div class="modal-image">
-	        	<img src="./images/historic-nashguessr-thumbnails/05-results.png" width="400" height="auto"/>
+	        	<img src="./images/historic-nashguessr-thumbnails/05-results.png" width="380" height="auto"/>
+	        	<p>Using Google Maps Api distance matrix methods, the distance between the user's guess and the actual location is measured and a score is assigned based on how close the user was to the correct location.</p>
 	        </div>
 	        <div class="modal-image">
-	        	<img src="./images/historic-nashguessr-thumbnails/06-details.png" width="400" height="auto"/>
+	        	<img src="./images/historic-nashguessr-thumbnails/06-details.png" width="380" height="auto"/>
+	        	<p>The user can access detail pages after playing a game and from their homepage. There are links to the National Register Nomination and additional photos, if they exist, for the selected place.</p>
 	        </div>
 	      </div>
 	    </div>
@@ -134,7 +143,7 @@
 			<h2 class="section-title"></h2>
 			<div class="row">
 				<div class="col-sm-2 offset-sm-2">
-					<img class="about-me" src="./images/me.png"/>
+					<img class="about-me" src="./images/me-round.png"/>
 				</div>
 				<div class="col-sm-6">
 					<h3>Hello!</h3>
@@ -209,16 +218,16 @@
 	<div id="contact">
 		<div class="row">
 			<div id="contact-info" class="col-sm-6 offset-sm-3">
-				<h2 class="text-center">Get in Touch</h2>
-				<h3 class="text-center">Need a developer? Want to discuss the tools we can make to encourage positive change in our community?</h3>
+				<h2 class="text-center contact">Get in Touch</h2>
+				<h3 class="text-center contact">Need a developer? Want to discuss the tools we can make to encourage positive change in our community?</h3>
 				<div class="row contact-list">
 					<div class="col-sm-6 offset-sm-3">
 						<i class="fa fa-map-marker" aria-hidden="true"></i>
-						<h4>Nashville, TN</h4><br>
+						<h4 class="contact">Nashville, TN</h4><br>
 						<i class="fa fa-envelope-o" aria-hidden="true"></i>
-						<h4>brown.m.j@outlook.com</h4><br>
+						<h4 class="contact">brown.m.j@outlook.com</h4><br>
 						<i class="fa fa-phone" aria-hidden="true"></i>
-						<h4>865-333-9733</h4>
+						<h4 class="contact">865-333-9733</h4>
 					</div>
 				</div>
 			</div>
@@ -235,10 +244,10 @@
 			</div>
 			<div class="col-sm-6">
 				<ul>
-					<li><a href="#" target="_blank"><i class="fa fa-github-square fa-lg" aria-hidden="true"></i></a></li>
-					<li><a href="#" target="_blank"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i></a></li>
-					<li><a href="#" target="_blank"><i class="fa fa-twitter-square fa-lg" aria-hidden="true"></i></a></li>
-					<li><a href="#" target="_blank"><i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i></a></li>
+					<li><a href="https://github.com/megbrown" target="_blank"><i class="fa fa-github-square fa-lg" aria-hidden="true"></i></a></li>
+					<li><a href="https://www.linkedin.com/in/megan-j-brown/" target="_blank"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i></a></li>
+					<li><a href="https://twitter.com/meganbrowncodes" target="_blank"><i class="fa fa-twitter-square fa-lg" aria-hidden="true"></i></a></li>
+					<li><a href="https://www.facebook.com/profile.php?id=100013415103228" target="_blank"><i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i></a></li>
 				</ul>
 			</div>
 		</div>
