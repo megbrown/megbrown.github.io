@@ -149,6 +149,9 @@ img.about-me {
   height: auto;
   margin-bottom: 40%;
 }
+.about-blurb {
+  margin-bottom: 6%;
+}
 /***** technologies *****/
 .tech-logo-cont {
   margin-bottom: 4%;
