@@ -164,6 +164,12 @@ img.about-me {
 .sub-tech {
   margin-bottom: 4%;
 }
+.link-style {
+  text-decoration: underline;
+}
+.link-style:hover {
+  color: #f7f7f7;
+}
 /***** contact *****/
 div#contact {
   background-image: url('../images/contact-background-01.jpeg');
@@ -188,6 +194,9 @@ div#contact-info {
   font-size: 1.5vw;
 }
 #contact i {
+  font-size: 1.5em;
+}
+#contact i:hover {
   font-size: 1.5em;
 }
 .contact {
