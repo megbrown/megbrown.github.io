@@ -147,10 +147,11 @@ div.modal-image {
 img.about-me {
   width: 110%;
   height: auto;
-  margin-bottom: 40%;
 }
-.about-blurb {
-  margin-bottom: 6%;
+.vertical-align {
+  display: flex;
+  align-items: center;
+  padding: 8% 0;
 }
 /***** technologies *****/
 .tech-logo-cont {
