@@ -20,9 +20,7 @@ a {
   text-decoration: none;
   color: #000;
 }
-a:hover {
-  text-decoration: underline;
-}
+
 h2.section-title {
   padding: 4% 0 2% 0;
 }
@@ -49,7 +47,7 @@ div#bio {
 div#bio-info {
   padding-top: 7%;
 }
-h1 {
+div#bio h1 {
   color: #fff;
   font-size: 5vw;
   margin: 0;
@@ -60,7 +58,7 @@ h1 {
 }
 #bio-info h3 {
   margin: 1.5em 0 2em 0;
-  color: #f7f7f7;
+  color: #cdcdcd;
   font-size: 2vw;
   letter-spacing: 1px;
   line-height: 1.5em;
@@ -84,7 +82,7 @@ h1 {
 #bio-info ul {
   list-style-type: none;
   display: block;
-  margin: 2.7em 0 0 0;
+  margin-top: 2.7em;
   padding-left: 0;
 }
 #bio-info ul li {
@@ -96,10 +94,7 @@ h1 {
   font-size: 1.5em;
 }
 #bio-info ul li a:hover {
-  color: #f7f7f7;
-}
-i {
-  font-size: 1vw;
+  color: #cdcdcd;
 }
 
 /***** portfolio *****/
@@ -117,10 +112,7 @@ a.portfolio-button:hover {
 }
 .card {
   margin-bottom: 15%;
-  border: 2px solid #f7f7f7;
-}
-p.card-text {
-  margin-bottom: 15px;
+  border: 2px solid #cdcdcd;
 }
 .link {
   font-size: .75em;
@@ -129,7 +121,7 @@ p.card-text {
   margin-bottom: 15px;
 }
 .link:hover {
-  color: #cbcbcb;
+  color: #cdcdcd;
   text-decoration: none;
 }
 img.github-logo {
@@ -153,6 +145,12 @@ img.about-me {
   align-items: center;
   padding: 8% 0;
 }
+.link-style {
+  text-decoration: underline;
+}
+.link-style:hover {
+  color: #cdcdcd;
+}
 /***** technologies *****/
 .tech-logo-cont {
   margin-bottom: 4%;
@@ -165,40 +163,28 @@ img.about-me {
 .sub-tech {
   margin-bottom: 4%;
 }
-.link-style {
-  text-decoration: underline;
-}
-.link-style:hover {
-  color: #f7f7f7;
-}
 /***** contact *****/
 div#contact {
   background-image: url('../images/contact-background-01.jpeg');
-  background-size: 100% auto;
+  height: 350px;
   background-repeat: no-repeat;
 }
-div#contact-info {
-  padding-top: 5%;
-  padding-bottom: 5%;
+.vertical-align-contact {
+  align-items: center;
+  padding: 3% 0;
 }
-#contact h2 {
-  font-size: 2vw;
-}
-#contact h3 {
-  font-size: 1.5vw;
+#contact h5 {
   margin: 1.2em 0;
 }
-#contact h4 {
+#contact h6 {
   display: inline;
   padding: 1em;
+}
+.contact-line-item {
   line-height: 2.5em;
-  font-size: 1.5vw;
 }
 #contact i {
-  font-size: 1.5em;
-}
-#contact i:hover {
-  font-size: 1.5em;
+  font-size: 1.75em;
 }
 .contact {
   font-weight: 700;
@@ -209,23 +195,36 @@ div#contact-info {
   height: 35px;
   border-top: 1px solid #000;
   background-color: #fff;
+  padding: 15px;
 }
-#footer h4 {
-  font-size: 1.5vw;
-  margin: 15px 0 0 15%;
+#footer h6 {
+  display: inline;
+  padding-left: 10%;
   font-weight: 300;
 }
 #footer ul {
   list-style-type: none;
   float: right;
-  margin: 14px 15% 0 0;
-  padding-left: 0;
+  padding-right: 8%;
+  display: inline;
 }
 #footer ul li {
   display: inline;
-  padding: 0.8em;
+  padding: 0.6em;
 }
 #footer ul li a {
   font-size: 1.1em;
   font-weight: 300;
+}
+
+#footer ul li a:hover {
+  color: #cdcdcd;
+}
+@media only screen and (max-width: 500px) {
+  #footer h6 {
+      padding-left: 0%;
+  }
+  #footer ul {
+      padding-right: 0%;
+  }
 }
