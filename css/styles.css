@@ -178,10 +178,6 @@ div#contact {
 }
 #contact h6 {
   display: inline;
-  padding: 1em;
-}
-.contact-line-item {
-  line-height: 2.5em;
 }
 #contact i {
   font-size: 1.75em;
@@ -200,7 +196,7 @@ div#contact {
 #footer h6 {
   display: inline;
   padding-left: 10%;
-  font-weight: 300;
+  font-weight: 900;
 }
 #footer ul {
   list-style-type: none;
@@ -213,7 +209,7 @@ div#contact {
   padding: 0.6em;
 }
 #footer ul li a {
-  font-size: 1.1em;
+  font-size: 1.3em;
   font-weight: 300;
 }
 
