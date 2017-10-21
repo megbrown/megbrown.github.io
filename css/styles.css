@@ -171,13 +171,16 @@ div#contact {
 }
 .vertical-align-contact {
   align-items: center;
-  padding: 3% 0;
+  padding-top: 3%;
 }
 #contact h5 {
   margin: 1.2em 0;
 }
 #contact h6 {
   display: inline;
+}
+.contact-line-item {
+  line-height: 2.75em;
 }
 #contact i {
   font-size: 1.75em;
