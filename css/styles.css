@@ -165,7 +165,7 @@ img.about-me {
 }
 /***** contact *****/
 div#contact {
-  background-image: url('../images/contact-background-01.jpeg');
+  background-image: url('../images/contact-background.jpg');
   height: 350px;
   background-repeat: no-repeat;
 }
