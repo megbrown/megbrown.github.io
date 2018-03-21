@@ -28,12 +28,8 @@
 		"image": "grunt"
 	},
 	{
-		"name": "PostgreSQL",
-		"image": "postgresql"
-	},
-	{
 		"name": "HTML5",
-		"image": "html5"
+		"image": "html"
 	},
 	{
 		"name": "CSS3",
