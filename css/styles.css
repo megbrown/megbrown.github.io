@@ -97,6 +97,11 @@ div#bio h1 {
   color: #cdcdcd;
 }
 
+.hi {
+  color: #cdcdcd;
+  font-weight: 900;
+}
+
 /***** portfolio *****/
 a.portfolio-button {
   display: inline-block;
@@ -115,7 +120,7 @@ a.portfolio-button:hover {
   border: 2px solid #cdcdcd;
 }
 .link {
-  font-size: .75em;
+  font-size: 0.75em;
   color: #000;
   display: block;
   margin-bottom: 15px;
@@ -166,12 +171,12 @@ img.about-me {
 /***** contact *****/
 div#contact {
   background-image: url('../images/contact-background.jpg');
-  height: 350px;
+  height: 300px;
   background-repeat: no-repeat;
 }
 .vertical-align-contact {
   align-items: center;
-  padding-top: 3%;
+  padding-top: 5%;
 }
 #contact h5 {
   margin: 1.2em 0;
@@ -221,12 +226,12 @@ div#contact {
 }
 @media only screen and (max-width: 500px) {
   #footer h6 {
-      padding-left: 0%;
+    padding-left: 0%;
   }
   #footer ul {
-      padding-right: 0%;
+    padding-right: 0%;
   }
   #footer ul li a {
-  font-size: 1em;
+    font-size: 1em;
   }
 }
