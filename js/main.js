@@ -9,15 +9,6 @@ const projects = [
 		imageAlt: "This is Historic NashGuessr."
 	},
 	{
-		title: "Website for Angels of Heart",
-		description: "Built by our team during Code for Nashville's annual hackathon.",
-		details: false,
-		githubLink: false,
-		deployedLink: "http://angelsofheart.org/",
-		imageSrc: "./images/ah-image-cap.png",
-		imageAlt: "Angels of Heart Website"
-	},
-	{
 		title: "NSS Cohort 20 Website",
 		description: "Contributions to our cohort's website at NSS.",
 		details: false,
@@ -25,6 +16,24 @@ const projects = [
 		deployedLink: "https://nss-day-cohort-20.github.io/Cohort20Site/",
 		imageSrc: "./images/c20-image-cap.png",
 		imageAlt: "NSS Cohort 20 website"
+	},
+	{
+		title: "Coloring Book (In Progress)",
+		description: "Start of a javascript/html/css coloring book.",
+		details: false,
+		githubLink: "https://github.com/megbrown/coloringBook",
+		deployedLink: "https://megbrown.github.io/coloringBook/",
+		imageSrc: "./images/coloring-cap.png",
+		imageAlt: "Coloring Book"
+	},
+	{
+		title: "Website for Angels of Heart",
+		description: "Built by our team during Code for Nashville's annual hackathon.",
+		details: false,
+		githubLink: false,
+		deployedLink: "http://angelsofheart.org/",
+		imageSrc: "./images/ah-image-cap.png",
+		imageAlt: "Angels of Heart Website"
 	},
 	{
 		title: "Knoxville Montessori Website",
