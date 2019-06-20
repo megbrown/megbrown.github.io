@@ -84,33 +84,27 @@ const technologies = [
 	}
 ]
 
-$(document).ready(function () {
+function buildLink(linkText) {
+	var link = $('<a>').addClass('link');
+	link.attr('href', linkText);
+	link.attr('target', '_blank');
 
-	function buildLink(linkText) {
-		var link = $('<a>').addClass('link');
-		link.attr('href', linkText);
-		link.attr('target', '_blank');
+	var logo = $("<img class='github-logo' width='15' height='auto' />");
 
-		var logo = $("<img class='github-logo' width='15' height='auto' />");
-
-		if (linkText.includes('github.com')) {
-			logo.attr('src', './images/github.png');
-		} else {
-			logo.attr('src', './images/web-b.png');
-		}
-
-		link.append(logo, linkText);
-		return link;
+	if (linkText.includes('github.com')) {
+		logo.attr('src', './images/github.png');
+	} else {
+		logo.attr('src', './images/web-b.png');
 	}
 
-	$.each(technologies, function (i, obj) {
-		let listItem = `<div class="col-sm-2 tech-logo-cont text-center">
-						<img class="img-fluid tech-logo" src="./images/logos/${obj.image}.png">
-						<h5 class="logo-title">${obj.name}</h5>`;
-		$('#techListContainer').append(listItem);
-	});
+	link.append(logo, linkText);
+	return link;
+}
 
-	projects.forEach(function (project) {
+function displayProjects(only3) {
+	$("#card-container").empty();
+
+	projects.forEach(function (project, index) {
 		var card = $('<div>').addClass('card');
 
 		//project image
@@ -149,7 +143,35 @@ $(document).ready(function () {
 		}
 
 		card.append(cardBlock);
-		$("#card-container").append(card);
+
+		var cardColumn = $('<div>').addClass('col-sm-4');
+		cardColumn.append(card);
+
+		if (only3 && index <= 2) {
+			$("#card-container").append(cardColumn);
+		}
+
+		if (!only3) {
+			$("#card-container").append(cardColumn);
+		}
 
 	})
+}
+
+$('#show-all-projects').on('click', function () {
+	$('.show-all-container').hide();
+	displayProjects();
+})
+
+$(document).ready(function () {
+
+	$.each(technologies, function (i, obj) {
+		let listItem = `<div class="col-sm-2 tech-logo-cont text-center">
+						<img class="img-fluid tech-logo" src="./images/logos/${obj.image}.png">
+						<h5 class="logo-title">${obj.name}</h5>`;
+		$('#techListContainer').append(listItem);
+	});
+
+	displayProjects(true);
+
 });
